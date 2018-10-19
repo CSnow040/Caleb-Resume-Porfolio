@@ -98,38 +98,51 @@ textarea {
    ========================================================================== */
 /* Structural Styles */
 html {
-    background-color: rgb(46, 46, 206);
+    background-color: rgb(69, 69, 69);
 }
-
-header {
-
-}
-
-header nav {
-
-}
-
 
 /* Body Header Styles */
+body header {}
 
+header h1 {
+    text-align: center;
+    color: rgb(214, 214, 214)
+}
 
 /* Body Styles */
-
+body {}
 
 /* Navigation Styles */
+nav {
+    background-color: rgb(90, 90, 90);
+}
 
+nav li {
+    background-color: rgb(130, 130, 130);
+    display: block;
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px 113px;
+}
+
+nav a:hover,
+nav a:active {}
+
+nav a:link,
+nav a:visited {}
 
 /* Section Styles */
-
+section {}
 
 /* Article Styles */
-
+article {}
 
 /* Aside Styles */
-
+aside {}
 
 /* Footer Styles */
-
+footer {}
 
 
 
@@ -169,7 +182,8 @@ header nav {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap;
+    /* 1 */
 }
 
 /*
@@ -211,8 +225,10 @@ header nav {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
@@ -230,9 +246,9 @@ header nav {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -243,11 +259,13 @@ header nav {
    ========================================================================== */
 
 @media print {
+
     *,
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster */
+        color: #000 !important;
+        /* Black prints faster */
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
@@ -259,11 +277,11 @@ header nav {
     }
 
     a[href]:after {
-        content: " (" attr(href) ")";
+        content: " ("attr(href) ")";
     }
 
     abbr[title]:after {
-        content: " (" attr(title) ")";
+        content: " ("attr(title) ")";
     }
 
     /*
@@ -279,6 +297,7 @@ header nav {
     pre {
         white-space: pre-wrap !important;
     }
+
     pre,
     blockquote {
         border: 1px solid #999;
