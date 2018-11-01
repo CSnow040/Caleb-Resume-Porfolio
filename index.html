@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Caleb J Snow</title>
   <meta name="description" content="">
@@ -14,31 +14,23 @@
 
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="grids.css">
 </head>
 
 <body>
 
   <header>
-    <nav>
-      <ol>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#About.me">About me</a></li>
-        <li><a href="#Skillset">Skillset</a></li>
-        <li><a href="#Resume">Resume</a></li>
-        <li><a href="#Contact">Contact</a></li>
-      </ol>
-    </nav>
+    <div class="Mainmenu">
+      <a href="#Contact">Contact</a>
+      <a href="#Resume">Resume</a>
+      <a href="#Skillset">Skillset</a>
+      <a href="#About.me">About me</a>
+      <a href="index.html">Home</a>
+    </div>
     <h1>Caleb J Snow Online Porfolio</h1>
   </header>
 
-  <img src="background.jpg" alt="">
-
-  <aside>
-    <p>
-      Hello, Welcome to my website! My name is Caleb Snow and I am a web developer and long term coding student going
-      into the industry (For more information visit the About Me link at the top of the page).
-    </p>
-  </aside>
+<div class="main">
   <section id="About.me">
     <article>
       <h1>About Me</h1>
@@ -63,8 +55,23 @@
       <p></p>
     </article>
   </section>
+</div>
 
-  <footer></footer>
+  <footer class="foot">
+     <p>2018 Caleb J Snow. All Rights Reserved.</p>
+<!-- Inside navigation tags will be social media links attached to their corresponding
+ icons such as Facebook link with Facebook icon -->
+     <nav>
+       <ul>
+         <!-- <li><a href=""><img id="fbicon" src="fbicon.png" alt="" /></a></li>
+         <li><a href=""><img id="twittericon" src="twittericon.png" alt="" /></a></li>
+         <li><a href=""></a></li> -->
+       </ul>
+     </nav>
+  </footer>
+
+
+
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
