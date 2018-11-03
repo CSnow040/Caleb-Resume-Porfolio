@@ -105,6 +105,7 @@ body {
     background-color: rgb(255, 255, 255);
     margin-left: auto;
     margin-right: auto;
+    background-image: url(Space.jpg);
 }
 
 box-sizing {
@@ -117,14 +118,16 @@ box-sizing {
 
 body header {
     font-size: 10px;
+    color: black;
 }
 
 header h1 {
     text-align: center;
     color: rgb(0, 0, 0);
-    padding-top: 150px;
-    padding-bottom: 155px;
+    padding-top: 175px;
+    padding-bottom: 175px;
     font-size: 10em;
+    color: white;
 }
 
 /* Navigation Styles */
@@ -135,6 +138,7 @@ header h1 {
     top: 0;
     width: 100%;
 }
+
 .Mainmenu a {
     display: block;
     float: left;
@@ -145,6 +149,10 @@ header h1 {
 
 .main {
     margin-top: 40px;
+}
+
+body>header>div.Mainmenu a {
+    color: #000;
 }
 
 body>header>div.Mainmenu a:link,
@@ -173,10 +181,9 @@ section {
 section>article>h1 {
     font-style: italic;
 }
-/* Article Styles */
-article p {
 
-}
+/* Article Styles */
+article p {}
 
 /* Footer Styles */
 footer.foot {
@@ -186,6 +193,7 @@ footer.foot {
     padding: 40px 0 110px 0;
     font-size: 18px;
 }
+
 footer nav {
     float: left;
 }
