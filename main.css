@@ -99,13 +99,20 @@ textarea {
 
 /* Structural Styles */
 
-@font-face {}
+/* @import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline|Permanent+Marker|Shadows+Into+Light'); */
+/* font-family: 'Kumar One Outline', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Shadows Into Light', cursive; */
+
+html {
+    background-image: url(Space.jpg);
+}
 
 body {
-    background-color: rgb(255, 255, 255);
     margin-left: auto;
     margin-right: auto;
-    background-image: url(Space.jpg);
+    background-position: center;
+    font-family: 'Shadows Into Light', cursive; 
 }
 
 box-sizing {
@@ -121,19 +128,19 @@ body header {
     color: black;
 }
 
-header h1 {
+header.Mainheader h1 {
     text-align: center;
     color: rgb(0, 0, 0);
-    padding-top: 175px;
-    padding-bottom: 175px;
-    font-size: 10em;
+    margin-top: 175px;
+    margin-bottom: 175px;
+    font-size: 6em;
     color: white;
+    font-family: 'Kumar One Outline', cursive; 
 }
 
 /* Navigation Styles */
 .Mainmenu {
     overflow: hidden;
-    background-color: rgb(231, 231, 231);
     position: fixed;
     top: 0;
     width: 100%;
@@ -145,18 +152,15 @@ header h1 {
     padding: 14px 16px;
     text-align: center;
     text-decoration: none;
+    font-family: 'Kumar One Outline', cursive; 
 }
 
 .main {
     margin-top: 40px;
 }
 
-body>header>div.Mainmenu a {
-    color: #000;
-}
-
-body>header>div.Mainmenu a:link,
-body>header>div.Mainmenu a:visited {
+body>header>nav.Mainmenu a:link,
+body>header>nav.Mainmenu a:visited {
     text-decoration-style: none;
     font-size: 2em;
     color: rgb(255, 255, 255);
@@ -166,32 +170,34 @@ body>header>div.Mainmenu a:visited {
     float: right;
 }
 
-body>header>div.Mainmenu a:hover,
-body>header>div.Mianmenu a:active {
+body>header>nav.Mainmenu a:hover,
+body>header>nav.Mianmenu a:active {
     background-color: rgb(20, 20, 20);
-    color: white;
+    color: rgb(126, 40, 206);
 }
 
 /* Section Styles */
-section {
-    text-align: center;
-    text-decoration-line: underline;
-}
 
-section>article>h1 {
-    font-style: italic;
-}
 
 /* Article Styles */
-article p {}
+article {
+    background-color: white;
+    color: black;
+}
 
 /* Footer Styles */
-footer.foot {
-    background-color: rgb(46, 46, 46);
+
+.foot {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer {
     color: white;
     text-align: center;
-    padding: 40px 0 110px 0;
     font-size: 18px;
+    font-family: 'Permanent Marker', cursive; 
 }
 
 footer nav {
