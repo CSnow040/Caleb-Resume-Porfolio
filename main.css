@@ -99,11 +99,6 @@ textarea {
 
 /* Structural Styles */
 
-/* @import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline|Permanent+Marker|Shadows+Into+Light'); */
-/* font-family: 'Kumar One Outline', cursive;
-font-family: 'Permanent Marker', cursive;
-font-family: 'Shadows Into Light', cursive; */
-
 html {
     background-image: url(Space.jpg);
 }
@@ -140,6 +135,7 @@ header.Mainheader h1 {
 
 /* Navigation Styles */
 .Mainmenu {
+    background-color: rgb(20, 20, 20);
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -150,7 +146,6 @@ header.Mainheader h1 {
     display: block;
     float: left;
     padding: 14px 16px;
-    text-align: center;
     text-decoration: none;
     font-family: 'Kumar One Outline', cursive; 
 }
@@ -167,12 +162,11 @@ body>header>nav.Mainmenu a:visited {
     text-decoration: none;
     padding-left: 20px;
     padding-right: 20px;
-    float: right;
+    /* float: right; */
 }
 
 body>header>nav.Mainmenu a:hover,
 body>header>nav.Mianmenu a:active {
-    background-color: rgb(20, 20, 20);
     color: rgb(126, 40, 206);
 }
 
@@ -213,6 +207,25 @@ footer:after {
     content: "";
     clear: both;
 }
+
+
+/* ======================================
+    Mobile Styles: 0px to 480px
+   ======================================
+*/
+@media only screen and (min-width: 480px) {}
+
+/* ======================================
+    Tablet Styles: 481px to greater
+   ======================================
+*/
+@media only screen and (min-width: 481px) {}
+
+/* ======================================
+    Desktop Styles: 768px to greater
+   ======================================
+*/
+@media only screen and (min-width: 769px) {}
 
 
 /* ==========================================================================
