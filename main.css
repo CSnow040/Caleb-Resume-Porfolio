@@ -142,7 +142,7 @@ header.Mainheader h1 {
     width: 100%;
 }
 
-.Mainmenu a {
+.Mainmenu ul li {
     display: block;
     float: left;
     padding: 14px 16px;
