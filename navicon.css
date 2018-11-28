@@ -17,6 +17,7 @@ a#navicon {
 @media only screen and (max-width: 480px) {
     a#navicon {
         display: block;
+        
     }
 
     nav.Mainmenu ul {
