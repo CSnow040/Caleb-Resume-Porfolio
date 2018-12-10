@@ -170,6 +170,12 @@ body>header>nav.Mianmenu a:active {
     color: rgb(126, 40, 206);
 }
 
+/* Navicon Styles */
+
+a#navicon {
+    display: none;
+}
+
 /* Section Styles */
 
 
@@ -216,9 +222,19 @@ footer:after {
    ======================================
 */
 @media only screen and (max-width: 480px) {
-    header h1 {
-        
-    }
+        a#navicon {
+            display: block;
+            
+        }
+    
+        nav.Mainmenu ul {
+            display: none;
+        }
+    
+        a#navicon:hover+ul,
+        nav.Mainmenu ul:hover {
+            display: block;
+        }
 }
 
 /* ======================================
@@ -232,6 +248,7 @@ footer:after {
    ======================================
 */
 @media only screen and (min-width: 769px) {}
+
 
 
 /* ==========================================================================
