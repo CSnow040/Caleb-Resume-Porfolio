@@ -145,7 +145,7 @@ header.Mainheader h1 {
 .Mainmenu ul li {
     display: block;
     float: left;
-    padding: 14px 16px;
+    padding: 12px 14px;
     text-decoration: none;
     font-family: 'Kumar One Outline', cursive;
 }
@@ -162,11 +162,10 @@ body>header>nav.Mainmenu a:visited {
     text-decoration: none;
     padding-left: 20px;
     padding-right: 20px;
-    /* float: right; */
 }
 
 body>header>nav.Mainmenu a:hover,
-body>header>nav.Mianmenu a:active {
+body>header>nav.Mainmenu a:active {
     color: rgb(126, 40, 206);
 }
 
@@ -176,13 +175,64 @@ a#navicon {
     display: none;
 }
 
-/* Section Styles */
+/* Section and Article Styles */
 
-
-/* Article Styles */
 article {
     background-color: white;
     color: black;
+}
+
+article ul li {
+    font-size: 2em;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+a#foxyform_embed_link_939910 script {
+    margin-left: 200px;
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    width: 60%;
+    margin-bottom: 100px;
+}
+
+section>h1 {
+    background-color: rgb(36, 36, 36);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-size: 6em;
+    color: white;
+    font-family: 'Kumar One Outline', cursive;
+}
+
+section article h1 {
+    text-align: center;
+    text-decoration-line: underline;
+    font-size: 2em;
+}
+
+section article p {
+    background-color: rgb(108, 123, 146);
+    text-align: center;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    border: 5px double rgb(0, 0, 0);
+}
+
+section>article>h1:first-of-type {
+    padding-top: 20px;
+}
+
+section>article:last-of-type {
+    padding-bottom: 10px;
 }
 
 /* Footer Styles */
@@ -224,15 +274,14 @@ footer:after {
 @media only screen and (max-width: 480px) {
         a#navicon {
             display: block;
-            
         }
     
-        nav.Mainmenu ul {
+        nav.Mainmenu ul li {
             display: none;
         }
     
-        a#navicon:hover+ul,
-        nav.Mainmenu ul:hover {
+        a#navicon:hover+ul li,
+        nav.Mainmenu ul li:hover {
             display: block;
         }
 }
