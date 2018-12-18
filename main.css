@@ -187,6 +187,7 @@ article ul li {
     padding-right: 35px;
     padding-left: 35px;
 }
+
 a#foxyform_embed_link_939910 script {
     margin-left: 200px;
 }
@@ -235,6 +236,12 @@ section>article:last-of-type {
     padding-bottom: 10px;
 }
 
+/* Aside Styles */
+
+aside {
+    margin-left: 250px;
+}
+
 /* Footer Styles */
 
 .foot {
@@ -272,18 +279,19 @@ footer:after {
    ======================================
 */
 @media only screen and (max-width: 480px) {
-        a#navicon {
-            display: block;
-        }
-    
-        nav.Mainmenu ul li {
-            display: none;
-        }
-    
-        a#navicon:hover+ul li,
-        nav.Mainmenu ul li:hover {
-            display: block;
-        }
+    a#navicon {
+        display: block;
+    }
+
+    nav.Mainmenu ul li {
+        display: none;
+    }
+
+    a#navicon:hover+ul li,
+    nav.Mainmenu ul li:hover {
+        display: block;
+        width: 100%;
+    }
 }
 
 /* ======================================
