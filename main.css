@@ -123,13 +123,22 @@ body header {
     color: black;
 }
 
-header.Mainheader h1 {
+header h1 {
     text-align: center;
     color: rgb(0, 0, 0);
     margin-top: 175px;
     margin-bottom: 175px;
     font-size: 6em;
     color: white;
+    font-family: 'Kumar One Outline', cursive;
+}
+
+article.mainpage h1 {
+    text-align: center;
+    color: rgb(255, 253, 253);
+    margin-top: 200px;
+    margin-bottom: 200px;
+    font-size: 5em;
     font-family: 'Kumar One Outline', cursive;
 }
 
@@ -150,7 +159,7 @@ header.Mainheader h1 {
     font-family: 'Kumar One Outline', cursive;
 }
 
-.main {
+div {
     margin-top: 40px;
 }
 
@@ -169,26 +178,20 @@ body>header>nav.Mainmenu a:active {
     color: rgb(126, 40, 206);
 }
 
-/* Navicon Styles */
-
-a#navicon {
-    display: none;
-}
-
 /* Section and Article Styles */
 
-article {
+article.main {
     background-color: white;
     color: black;
 }
 
-article ul li {
+article.main ul li {
     font-size: 2em;
     padding-right: 35px;
     padding-left: 35px;
 }
 
-a#foxyform_embed_link_939910 script {
+aside a#foxyform_embed_link_939910 script {
     margin-left: 200px;
 }
 
@@ -279,19 +282,37 @@ footer:after {
    ======================================
 */
 @media only screen and (max-width: 480px) {
-    a#navicon {
-        display: block;
-    }
-
-    nav.Mainmenu ul li {
-        display: none;
-    }
-
-    a#navicon:hover+ul li,
-    nav.Mainmenu ul li:hover {
+    nav ul li {
         display: block;
         width: 100%;
+        overflow: visible;
+        top: 0;
+        margin-left: 80px;
+        order: 1;
     }
+
+    article.mainpage h1 {
+        margin-top: 250px;
+        width: 100%;
+        font-size: 3em;
+        order: 2;
+    }
+
+    article.main {
+        width: 100%;
+    }
+
+    section>h1 {
+        margin-top: 220px;
+        font-size: 2em;
+        background-color: rgb(36, 36, 36);
+    }
+
+    aside {
+        margin-right: 600px;
+    }
+
+
 }
 
 /* ======================================
